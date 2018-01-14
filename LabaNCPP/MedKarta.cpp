@@ -5,19 +5,19 @@ using namespace std;
 
 MedKarta::MedKarta()
 {
-	cout << "Вызван конструктор класса MedKarta" << endl;
+	cout << "MedKarta class constructor has been initialised" << endl;
 	MedKarta::setMedKartaId();
 	MedKarta::setMedKartaOk();
 }
 
 MedKarta::~MedKarta()
 {
-	cout << "Вызван деструктор класса MedKarta" << endl;
+	cout << "MedKarta class destructor has been initialised" << endl;
 }
 
 void const MedKarta::getMedKartaId()
 {
-	cout << "Номер медицинской карты: " + id << endl;
+	cout << "Medical card number: " + id << endl;
 }
 
 void MedKarta::setMedKartaId()
@@ -26,7 +26,7 @@ void MedKarta::setMedKartaId()
 
 	do
 	{
-		cout << "Введите номер медицинской карты: " << endl;
+		cout << "Enter a medical card number: " << endl;
 		cin >> testId;
 	} 
 	while (testId < 0);
@@ -38,7 +38,7 @@ void MedKarta::setMedKartaOk()
 
 	do
 	{
-		cout << "Если медицинская карта прошла проверку - введите 1, если не прошла - введите 2: ";
+		cout << "If Medical card have passed the verification enter 1 otherwise enter 2: ";
 		cin >> num;
 	} 
 	while (num < 1 || num > 2);
@@ -50,10 +50,10 @@ void MedKarta::getMedKartaOk()
 {
 	if (isOk)
 	{
-		cout << "Медицинская карта прошла проверку" << endl;
+		cout << "Medical card have passed verification" << endl;
 	}
 	else
 	{
-		cout << "Медицинская карта не прошла проверку" << endl;
+		cout << "Medical card haven't passed verification" << endl;
 	}
 }

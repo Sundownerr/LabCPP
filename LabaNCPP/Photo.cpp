@@ -4,14 +4,14 @@ using namespace std;
 
 Photo::Photo()
 {
-	cout << "Вызван конструктор класса Photo" << endl;
+	cout << "Photo class constructor has been initialised" << endl;
 	
 	Photo::setPhotoOk();
 }
 
 Photo::~Photo()
 {
-	cout << "Вызван деструктор класса Photo" << endl;
+	cout << "Photo class destructor has been initialised" << endl;
 }
 
 void Photo::setPhotoOk()
@@ -20,7 +20,7 @@ void Photo::setPhotoOk()
 
 	do
 	{
-		cout << "Если фото прошло проверку - введите 1, если не прошел - введите 2: ";
+		cout << "If Photo have passed the verification enter 1 otherwise enter 2: ";
 		cin >> num;
 	} 
 	while (num < 1 || num > 2);
@@ -32,10 +32,10 @@ void const Photo::getPhotoOk()
 {
 	if (isOk)
 	{
-		cout << "Фото прошло проверку" << endl;
+		cout << "Photo have passed verification" << endl;
 	}
 	else
 	{
-		cout << "Фото не прошло проверку" << endl;
+		cout << "Photo haven't passed verification" << endl;
 	}
 }

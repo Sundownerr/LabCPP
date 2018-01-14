@@ -10,12 +10,12 @@ Documents::Documents(Attestat a, Voennik v, MedKarta m, Photo p)
 	medKarta = m;
 	photo = p;
 
-	cout << "Вызван конструктор класса Documents" << endl;
+	cout << "Documents class constructor has been initialised" << endl;
 }
 
 Documents::~Documents() 
 {
-	cout << "Вызван деструктор класса Documents" << endl;
+	cout << "Documents class destructor has been initialised" << endl;
 }
 
 
@@ -25,7 +25,7 @@ void const Documents::getDocsData()
 	
 	do 
 	{
-		cout << "Введите цифру для вывода информации по желаемому документу: \n1 - Аттестат\n2 - Медицинская карта\n3 - Военные документы\n4 - Фотография\n5 - Вывести информацию по всем документам" << endl;
+		cout << "Enter following numbers to show the docment information you want: \n1 - Attestat\n2 - Medical card\n3 - Military documents\n4 - Photo\n5 - Show all documents information" << endl;
 		cin >> inputNumber;
 	} 
 	while (checkInputNum(inputNumber));

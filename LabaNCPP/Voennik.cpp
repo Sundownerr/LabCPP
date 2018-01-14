@@ -5,19 +5,19 @@ using namespace std;
 
 Voennik::Voennik()
 {
-	cout << "Вызван конструктор класса Voennik" << endl;
+	cout << "Voennik class constructor has been initialised" << endl;
 	Voennik::setVoennikId();
 	Voennik::setVoennikOk();
 }
 
 Voennik::~Voennik()
 {
-	cout << "Вызван деструктор класса Voennik" << endl;
+	cout << "Voennik class destructor has been initialised" << endl;
 }
 
 void const Voennik::getVoennikId()
 {
-	cout << "Номер военного документа: " + id << endl;
+	cout << "Military documents number: " + id << endl;
 }
 
 void Voennik::setVoennikId()
@@ -26,7 +26,7 @@ void Voennik::setVoennikId()
 	
 	do
 	{
-		cout << "Введите номер военного документа: " << endl;
+		cout << "Enter a military documents number: " << endl;
 		cin >> testId;
 	} 
 	while (testId < 0);
@@ -38,7 +38,7 @@ void Voennik::setVoennikOk()
 
 	do
 	{
-		cout << "Если военный документ прошел проверку - введите 1, если не прошел - введите 2: ";
+		cout << "If Military documents have passed the verification enter 1 otherwise enter 2: ";
 		cin >> num;
 	} 
 	while (num < 1 || num > 2);
@@ -50,10 +50,10 @@ void Voennik::getVoennikOk()
 {
 	if (isOk)
 	{
-		cout << "Военный документ прошел проверку" << endl;
+		cout << "Military documents have passed verification" << endl;
 	}
 	else
 	{
-		cout << "Военный документ не прошел проверку" << endl;
+		cout << "Military documents haven't passed verification" << endl;
 	}
 }

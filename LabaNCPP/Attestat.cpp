@@ -4,19 +4,19 @@ using namespace std;
 
 Attestat::Attestat()
 {
-	cout << "Вызван конструктор класса Attestat" << endl;
+	cout << "Attestat class constructor has been initialised" << endl;
 	Attestat::setAttestatId();
 	Attestat::setAttestatOk();
 }
 
 Attestat::~Attestat()
 {
-	cout << "Вызван деструктор класса Attestat" << endl;
+	cout << "Attestat class destructor has been initialised" << endl;
 }
 
 void const Attestat::getAttestatId()
 {
-	cout << "Номер аттестата: " + id << endl;
+	cout << "Attestat number: " + id << endl;
 }
 
 void Attestat::setAttestatId()
@@ -25,7 +25,7 @@ void Attestat::setAttestatId()
 	
 	do
 	{
-		cout << "Введите номер аттестата: " << endl;
+		cout << "Enter an attestat number: " << endl;
 		cin >> testId;
 	} 
 	while (testId < 0);
@@ -37,7 +37,7 @@ void Attestat::setAttestatOk()
 
 	do
 	{
-		cout << "Если аатестат прошел проверку - введите 1, если не прошел - введите 2: ";
+		cout << "If Attestat have passed the verification enter 1 otherwise enter 2: ";
 		cin >> num;
 	} 
 	while (num < 1 || num > 2);
@@ -49,10 +49,10 @@ void Attestat::getAttestatOk()
 {
 	if (isOk)
 	{
-		cout << "Аттестат прошел проверку" << endl;
+		cout << "Attestat have passed verification" << endl;
 	}
 	else
 	{
-		cout << "Аттестат не прошел проверку" << endl;
+		cout << "Attestat haven't passed verification" << endl;
 	}
 }
