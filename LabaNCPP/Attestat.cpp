@@ -1,10 +1,10 @@
 #include "Attestat.h"
-#include <iostream>
+
 using namespace std;
 
 Attestat::Attestat()
 {
-	cout << "Attestat class constructor has been initialised" << endl;
+	cout << "\nAttestat default class constructor has been initialised\n" << endl;
 	Attestat::setAttestatId();
 	Attestat::setAttestatOk();
 }
@@ -16,7 +16,7 @@ Attestat::~Attestat()
 
 void const Attestat::getAttestatId()
 {
-	cout << "Attestat number: " + id << endl;
+	cout << "Attestat number: " + to_string(id) << endl;
 }
 
 void Attestat::setAttestatId()
@@ -29,6 +29,8 @@ void Attestat::setAttestatId()
 		cin >> testId;
 	} 
 	while (testId < 0);
+
+	id = testId;
 }
 
 void Attestat::setAttestatOk()

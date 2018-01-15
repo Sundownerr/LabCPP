@@ -146,7 +146,7 @@
     <ClCompile Include="MedKarta.cpp" />
     <ClCompile Include="Photo.cpp" />
     <ClCompile Include="Predicate.cpp" />
-    <ClCompile Include="Program.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="Voennik.cpp" />
   </ItemGroup>
   <ItemGroup>

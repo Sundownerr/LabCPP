@@ -1,11 +1,9 @@
 #include "Voennik.h"
-#include <iostream>
 using namespace std;
-
 
 Voennik::Voennik()
 {
-	cout << "Voennik class constructor has been initialised" << endl;
+	cout << "\nVoennik default class constructor has been initialised\n" << endl;
 	Voennik::setVoennikId();
 	Voennik::setVoennikOk();
 }
@@ -17,7 +15,7 @@ Voennik::~Voennik()
 
 void const Voennik::getVoennikId()
 {
-	cout << "Military documents number: " + id << endl;
+	cout << "Military documents number: " + to_string(id) << endl;
 }
 
 void Voennik::setVoennikId()
@@ -30,6 +28,8 @@ void Voennik::setVoennikId()
 		cin >> testId;
 	} 
 	while (testId < 0);
+
+	id = testId;
 }
 
 void Voennik::setVoennikOk()

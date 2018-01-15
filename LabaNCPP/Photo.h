@@ -1,5 +1,7 @@
 #pragma once
 #include "Predicate.h"
+#include <iostream>
+#include <string>
 
 class Photo
 {

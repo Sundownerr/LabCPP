@@ -4,6 +4,7 @@
 #include "Voennik.h"
 #include "Photo.h"
 #include "Predicate.h"
+#include <iostream>
 
 class Documents : Attestat, Voennik, MedKarta, Photo
 {
@@ -15,6 +16,8 @@ private:
 	MedKarta medKarta;
 	Photo photo;
 
+	bool checkInputNum(int);
+
 public:
 
 	Documents();
@@ -23,5 +26,5 @@ public:
 
 	void const getDocsData();
 	void setDocsData();	
-	bool checkInputNum(int);
+	
 };

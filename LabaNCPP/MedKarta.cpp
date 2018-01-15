@@ -1,11 +1,9 @@
 #include "MedKarta.h"
-#include <iostream>
 using namespace std;
-
 
 MedKarta::MedKarta()
 {
-	cout << "MedKarta class constructor has been initialised" << endl;
+	cout << "\nMedKarta default class constructor has been initialised\n" << endl;
 	MedKarta::setMedKartaId();
 	MedKarta::setMedKartaOk();
 }
@@ -17,7 +15,7 @@ MedKarta::~MedKarta()
 
 void const MedKarta::getMedKartaId()
 {
-	cout << "Medical card number: " + id << endl;
+	cout << "Medical card number: " + to_string(id) << endl;
 }
 
 void MedKarta::setMedKartaId()
@@ -30,6 +28,8 @@ void MedKarta::setMedKartaId()
 		cin >> testId;
 	} 
 	while (testId < 0);
+
+	id = testId;
 }
 
 void MedKarta::setMedKartaOk()

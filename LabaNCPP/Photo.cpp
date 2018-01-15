@@ -1,10 +1,9 @@
 #include "Photo.h"
-#include <iostream>
 using namespace std;
 
 Photo::Photo()
 {
-	cout << "Photo class constructor has been initialised" << endl;
+	cout << "\nPhoto default class constructor has been initialised\n" << endl;
 	
 	Photo::setPhotoOk();
 }

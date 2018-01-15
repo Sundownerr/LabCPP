@@ -6,10 +6,10 @@ using namespace std;
 
 Abiturient::Abiturient()
 {
-	
+	cout << "\nAbiturient class constructor has been initialised\n" << endl;
 	setAbiturientInfo();
 	
-	cout << "Abiturient class constructor has been initialised" << endl;
+	
 }
 
 Abiturient::~Abiturient()
