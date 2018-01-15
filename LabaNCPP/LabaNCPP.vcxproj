@@ -144,6 +144,7 @@
     <ClCompile Include="Documents.cpp" />
     <ClCompile Include="Exams.cpp" />
     <ClCompile Include="MedKarta.cpp" />
+    <ClCompile Include="Menu.cpp" />
     <ClCompile Include="Photo.cpp" />
     <ClCompile Include="Predicate.cpp" />
     <ClCompile Include="main.cpp" />
@@ -155,6 +156,7 @@
     <ClInclude Include="Documents.h" />
     <ClInclude Include="Exams.h" />
     <ClInclude Include="MedKarta.h" />
+    <ClInclude Include="Menu.h" />
     <ClInclude Include="Photo.h" />
     <ClInclude Include="Predicate.h" />
     <ClInclude Include="Voennik.h" />

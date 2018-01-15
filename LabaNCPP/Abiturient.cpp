@@ -7,8 +7,6 @@ using namespace std;
 Abiturient::Abiturient()
 {
 	cout << "\nAbiturient class constructor has been initialised\n" << endl;
-	setAbiturientInfo();
-	
 	
 }
 
@@ -35,11 +33,13 @@ void Abiturient::setAbiturientInfo()
 	cout << "Enter abiturient group: ";
 	cin >> group;
 
-	cout << "Enter the amount of faculties that the applicant wants to enroll: ";
+	cout << "Enter the amount of faculties that the abiturient wants to enroll: ";
 	cin >> facltyVectorSize;
 
 	chosenFaculty.resize(facltyVectorSize);
 	chosenFaculty = setChosenFaculty(facltyVectorSize);
+
+	docs.setDocsData();
 }
 
 vector<int> Abiturient::setChosenFaculty(const int n)

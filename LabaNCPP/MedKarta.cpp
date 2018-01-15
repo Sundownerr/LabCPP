@@ -4,8 +4,6 @@ using namespace std;
 MedKarta::MedKarta()
 {
 	cout << "\nMedKarta default class constructor has been initialised\n" << endl;
-	MedKarta::setMedKartaId();
-	MedKarta::setMedKartaOk();
 }
 
 MedKarta::~MedKarta()

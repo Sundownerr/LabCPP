@@ -4,8 +4,6 @@ using namespace std;
 Photo::Photo()
 {
 	cout << "\nPhoto default class constructor has been initialised\n" << endl;
-	
-	Photo::setPhotoOk();
 }
 
 Photo::~Photo()

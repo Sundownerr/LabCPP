@@ -1,11 +1,15 @@
 #include <iostream>
-#include "Documents.h"
+#include "Abiturient.h"
+#include "Menu.h"
 
 using namespace std;
 
 void main()
 {
-	Documents *pdocs;
-	pdocs = new Documents;
 	
+	Menu men;
+
+	
+
+	system("pause");
 }

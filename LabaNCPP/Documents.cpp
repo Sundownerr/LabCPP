@@ -2,16 +2,9 @@
 
 using namespace std;
 
-Documents::Documents(Attestat a, Voennik v, MedKarta m, Photo p)
+Documents::Documents(Attestat a, Voennik v, MedKarta m, Photo p) : attestat(a), voennik(v), medKarta(m), photo(p)
 {
 	cout << "\nDocuments class constructor has been initialised\n" << endl;
-
-	attestat = a;
-	voennik = v;
-	medKarta = m;
-	photo = p;
-
-	getDocsData();
 }
 
 Documents::~Documents() 
@@ -21,9 +14,7 @@ Documents::~Documents()
 
 Documents::Documents(): Attestat(attestat), Voennik(voennik), MedKarta(medKarta), Photo(photo)
 {
-	cout << "\nDocuments default class constructor has been initialised\n" << endl;
-		
-	getDocsData();
+	cout << "\nDocuments default class constructor has been initialised\n" << endl;	
 }
 
 void const Documents::getDocsData()
@@ -69,6 +60,17 @@ void const Documents::getDocsData()
 		photo.getPhotoOk();
 		break;
 	}
+}
+
+void Documents::setDocsData()
+{
+	attestat.setAttestatId();
+	attestat.setAttestatOk();
+	medKarta.setMedKartaId();
+	medKarta.setMedKartaOk();
+	voennik.setVoennikId();
+	voennik.setVoennikOk();
+	photo.setPhotoOk();
 }
 
 bool Documents::checkInputNum(int inputNumber)

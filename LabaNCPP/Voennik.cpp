@@ -4,8 +4,6 @@ using namespace std;
 Voennik::Voennik()
 {
 	cout << "\nVoennik default class constructor has been initialised\n" << endl;
-	Voennik::setVoennikId();
-	Voennik::setVoennikOk();
 }
 
 Voennik::~Voennik()

@@ -4,9 +4,7 @@ using namespace std;
 
 Attestat::Attestat()
 {
-	cout << "\nAttestat default class constructor has been initialised\n" << endl;
-	Attestat::setAttestatId();
-	Attestat::setAttestatOk();
+	cout << "\nAttestat default class constructor has been initialised\n" << endl;	
 }
 
 Attestat::~Attestat()
