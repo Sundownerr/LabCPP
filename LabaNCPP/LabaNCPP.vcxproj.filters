@@ -36,6 +36,12 @@
     <ClCompile Include="Predicate.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Abiturient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Exams.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Attestat.h">
@@ -54,6 +60,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Predicate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Abiturient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Exams.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

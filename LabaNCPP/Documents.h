@@ -5,7 +5,7 @@
 #include "Photo.h"
 #include "Predicate.h"
 
-class Documents
+class Documents : Attestat, Voennik, MedKarta, Photo
 {
 
 

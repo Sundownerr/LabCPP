@@ -18,6 +18,13 @@ Documents::~Documents()
 	cout << "Documents class destructor has been initialised" << endl;
 }
 
+Documents::Documents()
+{
+	Attestat attestat;
+	Voennik voennik;
+	MedKarta medKarta;
+	Photo photo;
+}
 
 void const Documents::getDocsData()
 {

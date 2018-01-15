@@ -139,8 +139,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Abiturient.cpp" />
     <ClCompile Include="Attestat.cpp" />
     <ClCompile Include="Documents.cpp" />
+    <ClCompile Include="Exams.cpp" />
     <ClCompile Include="MedKarta.cpp" />
     <ClCompile Include="Photo.cpp" />
     <ClCompile Include="Predicate.cpp" />
@@ -148,8 +150,10 @@
     <ClCompile Include="Voennik.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Abiturient.h" />
     <ClInclude Include="Attestat.h" />
     <ClInclude Include="Documents.h" />
+    <ClInclude Include="Exams.h" />
     <ClInclude Include="MedKarta.h" />
     <ClInclude Include="Photo.h" />
     <ClInclude Include="Predicate.h" />
