@@ -4,5 +4,5 @@
 Exams::Exams(Abiturient ab)
 {
 
-	ab.
+	
 }

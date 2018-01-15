@@ -8,7 +8,6 @@
 class Documents : Attestat, Voennik, MedKarta, Photo
 {
 
-
 private:
 
 	Attestat attestat;
