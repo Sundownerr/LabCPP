@@ -143,6 +143,8 @@
     <ClCompile Include="Attestat.cpp" />
     <ClCompile Include="Documents.cpp" />
     <ClCompile Include="Exams.cpp" />
+    <ClCompile Include="Interview.cpp" />
+    <ClCompile Include="KnowlegeTest.cpp" />
     <ClCompile Include="MedKarta.cpp" />
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="Photo.cpp" />
@@ -155,6 +157,8 @@
     <ClInclude Include="Attestat.h" />
     <ClInclude Include="Documents.h" />
     <ClInclude Include="Exams.h" />
+    <ClInclude Include="Interview.h" />
+    <ClInclude Include="KnowlegeTest.h" />
     <ClInclude Include="MedKarta.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="Photo.h" />

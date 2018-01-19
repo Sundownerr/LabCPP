@@ -1,20 +1,26 @@
 #pragma once
 #include "Abiturient.h"
+#include "KnowlegeTest.h"
 #include <vector>
+#include <math.h>
 using namespace std;
 
-class Exams
+class Exams : KnowlegeTest
 {
 private:
 
-	vector<int> facultyExams;
+	vector<double> facultyExamsScore;
+	double scoreToPass;
 
-	vector<int> setFacultyExam(int facultyId);
+	void setFacultyExam(int);
+	double averageScoreToPass(double, ...);
+	
 
 public:
 
 	Exams();
 	Exams(Abiturient);
-
 	~Exams();
+
+	bool getStatus();
 };

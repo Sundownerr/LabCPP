@@ -1,11 +1,13 @@
 #pragma once
-
 #include "Abiturient.h"
 
 class Menu
 {
+
 private:
-	Abiturient ab;
+
+	vector<Abiturient> ab;
+
 public:
 
 	Menu();

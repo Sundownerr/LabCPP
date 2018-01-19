@@ -4,17 +4,17 @@ using namespace std;
 
 Documents::Documents(Attestat a, Voennik v, MedKarta m, Photo p) : attestat(a), voennik(v), medKarta(m), photo(p)
 {
-	cout << "\nDocuments class constructor has been initialised\n" << endl;
+	cout << "\nDocuments class constructor has been initialised . . ." << endl;
 }
 
 Documents::~Documents() 
 {
-	cout << "Documents class destructor has been initialised" << endl;
+	cout << "Documents class destructor has been initialised . . ." << endl;
 }
 
 Documents::Documents(): Attestat(attestat), Voennik(voennik), MedKarta(medKarta), Photo(photo)
 {
-	cout << "\nDocuments default class constructor has been initialised\n" << endl;	
+	cout << "\nDocuments default class constructor has been initialised . . .\n" << endl;	
 }
 
 void const Documents::getDocsData()

@@ -8,7 +8,7 @@ class Attestat
 
 private:
 
-	int id;
+	int id, indx;
 	bool isOk;
 
 public:

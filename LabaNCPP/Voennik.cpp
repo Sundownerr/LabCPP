@@ -3,12 +3,12 @@ using namespace std;
 
 Voennik::Voennik()
 {
-	cout << "\nVoennik default class constructor has been initialised\n" << endl;
+	cout << "\nVoennik default class constructor has been initialised . . ." << endl;
 }
 
 Voennik::~Voennik()
 {
-	cout << "Voennik class destructor has been initialised" << endl;
+	cout << "Voennik class destructor has been initialised . . ." << endl;
 }
 
 void const Voennik::getVoennikId()
@@ -22,7 +22,7 @@ void Voennik::setVoennikId()
 	
 	do
 	{
-		cout << "Enter a military documents number: " << endl;
+		cout << "Enter a military documents number: ";
 		cin >> testId;
 	} 
 	while (testId < 0);

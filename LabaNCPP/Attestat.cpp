@@ -3,13 +3,14 @@
 using namespace std;
 
 Attestat::Attestat()
-{
-	cout << "\nAttestat default class constructor has been initialised\n" << endl;	
+{	
+	indx = 0;
+	cout << "\nAttestat default class constructor has been initialised . . ." << endl;	
 }
 
 Attestat::~Attestat()
 {
-	cout << "Attestat class destructor has been initialised" << endl;
+	cout << "Attestat class destructor has been initialised . . ."<< endl;
 }
 
 void const Attestat::getAttestatId()
@@ -23,7 +24,7 @@ void Attestat::setAttestatId()
 	
 	do
 	{
-		cout << "Enter an attestat number: " << endl;
+		cout << "Enter an attestat number: ";
 		cin >> testId;
 	} 
 	while (testId < 0);

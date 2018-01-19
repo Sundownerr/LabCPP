@@ -6,13 +6,13 @@ using namespace std;
 
 Abiturient::Abiturient()
 {
-	cout << "\nAbiturient class constructor has been initialised\n" << endl;
-	
+	cout << "\nAbiturient class constructor has been initialised . . ." << endl;
+	setAbiturientInfo();
 }
 
 Abiturient::~Abiturient()
 {
-	cout << "Abiturient class destructor has been initialised" << endl;
+	cout << "Abiturient class destructor has been initialised . . ." << endl;
 }
 
 string Abiturient::getAbiturientInfo()
@@ -36,10 +36,14 @@ void Abiturient::setAbiturientInfo()
 	cout << "Enter the amount of faculties that the abiturient wants to enroll: ";
 	cin >> facltyVectorSize;
 
+	cout << "Choose the basis: budget (enter 1) or commercial (enter 2): ";
+	cin >> basis;
+
 	chosenFaculty.resize(facltyVectorSize);
 	chosenFaculty = setChosenFaculty(facltyVectorSize);
 
 	docs.setDocsData();
+	
 }
 
 vector<int> Abiturient::setChosenFaculty(const int n)
@@ -60,3 +64,8 @@ vector<int> Abiturient::setChosenFaculty(const int n)
 	return vec;
 }
 
+ostream& operator<<(ostream& os, const Abiturient& ab)
+{
+	os << ab.name << ' ' << ab.surname << ' ' << ab.group;
+	return os;
+}

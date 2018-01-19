@@ -3,12 +3,13 @@ using namespace std;
 
 Photo::Photo()
 {
-	cout << "\nPhoto default class constructor has been initialised\n" << endl;
+	
+	cout << "\nPhoto default class constructor has been initialised . . ." << endl;
 }
 
 Photo::~Photo()
 {
-	cout << "Photo class destructor has been initialised" << endl;
+	cout << "Photo class destructor has been initialised . . ." << endl;
 }
 
 void Photo::setPhotoOk()

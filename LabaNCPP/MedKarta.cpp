@@ -3,12 +3,12 @@ using namespace std;
 
 MedKarta::MedKarta()
 {
-	cout << "\nMedKarta default class constructor has been initialised\n" << endl;
+	cout << "\nMedKarta default class constructor has been initialised . . ." << endl;
 }
 
 MedKarta::~MedKarta()
 {
-	cout << "MedKarta class destructor has been initialised" << endl;
+	cout << "MedKarta class destructor has been initialised . . ." << endl;
 }
 
 void const MedKarta::getMedKartaId()
@@ -22,7 +22,7 @@ void MedKarta::setMedKartaId()
 
 	do
 	{
-		cout << "Enter a medical card number: " << endl;
+		cout << "Enter a medical card number: ";
 		cin >> testId;
 	} 
 	while (testId < 0);
